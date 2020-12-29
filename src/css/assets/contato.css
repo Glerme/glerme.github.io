@@ -1,0 +1,62 @@
+/* Contato */
+
+#contato {
+  width: 100vw;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.teste {
+  display: grid;
+  padding: 30px;
+}
+
+label {
+  font-size: 20px;
+  padding: 5px;
+}
+
+form input {
+  font-family: "Segoe UI", sans-serif;
+  width: 400px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+#mensagem {
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#enviar {
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#enviar:hover {
+  background-color: #3a3a3a;
+  transition: 0.3s all;
+}
