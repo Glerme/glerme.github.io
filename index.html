@@ -18,10 +18,10 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-
   </head>
 
   <body>
+  <!-- Menu -->
     <nav id="menu" class="js-menu">
       <div>
         <a href="" class="fas fa-code fa-3x logo"></a>
@@ -33,6 +33,7 @@
       </div>
     </nav>
 
+    <!-- Seção Sobre -->
     <section id="sobre" class="js-scroll">
       <div class="principal">
         <div class="bloco">
@@ -54,6 +55,9 @@
       </div>
     </section>
 
+    <!-- Menu Lateral de Redes Sociais -->
+    <div class="dotted"></div>
+    <div class="linha"></div>
     <aside>
       <ul class="menu-aside">
         <li>
@@ -90,6 +94,7 @@
       </ul>
     </aside>
 
+    <!-- Seção Projetos -->
     <section id="projetos">
       <div class="bloco-projetos js-scroll">
         <h2>Projetos</h2>
@@ -117,6 +122,7 @@
       </div>
     </section>
 
+    <!-- Seção Projetos finalizados -->
     <section class="bloco-projetos js-scroll" id="projetos2">
       <h2>Projetos</h2>
       <div class="projetos-andamento">
@@ -227,14 +233,17 @@
       </div>
     </section>
 
+
+            <!-- action="https://api.whatsapp.com/send?phone=5514998363749" -->
+    <!-- Seção Contato -->
     <section id="contato"  class="js-scroll">
       <h2>Contato</h2>
-      <form
-        action="https://api.whatsapp.com/send?phone=5514998363749"
+      <div id="retorno">
+        <form
         class="formulario"
         method="POST"
         target="_blank"
-        id="send-message-whatsapp"
+        id="campo"
       >
         <div class="teste">
           <label for="nome">Nome:</label>
@@ -244,7 +253,7 @@
           <input type="email" name="email" id="email" />
 
           <label for="telefone">Celular/Whatsapp</label>
-          <input type="text" name="telefone" id="telefone" value="" />
+          <input type="text" name="telefone" id="telefone" placeholder="(DDD) 9xxxx-xxxx" />
 
           <label for="mensagem">Mensagem:</label>
           <textarea
@@ -261,8 +270,11 @@
           </div>
         </div>
       </form>
+      </div>
+     
     </section>
 
+    <!-- Rodapé -->
     <footer class="js-scroll">
       <div class="borda">
         <h4>Guilherme Felipe</h4>
@@ -295,5 +307,6 @@
     </footer>
 
     <script type="module" src="./src/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </body>
 </html>
