@@ -1,9 +1,7 @@
-/* @import "./assets/breakpoints.css"; */
-/* @import "./assets/menu.css"; */
 @import "./assets/menu-aside.css";
-/* @import "./assets/projetos.css"; */
 @import "./assets/slide.css";
 @import "./assets/contato.css";
+@import "./assets/projetos.css";
 @import "./assets/footer.css";
 
 * {
@@ -18,69 +16,55 @@ body {
   color: white;
 }
 
+ul li {
+  list-style: none;
+}
+
+#maquina {
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.img {
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
 nav div {
   padding: 10px;
 }
 
 nav div a {
   display: flex;
-  align-items: ri;
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: darkgrey;
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 #sobre {
   padding: 10px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
-#projetos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  color: black;
-  text-align: center;
-  margin: 10px;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.card img {
-  border-radius: 10px;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", sans-serif;
-  overflow-x: hidden;
-  background-color: #1d1d1d !important;
-  color: white !important;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-h2 {
-  font-size: 80px;
+.conteudo {
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -141,6 +125,55 @@ h2 {
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+h2 {
+  font-size: 80px;
+  font-weight: 300;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+  background-color: #1d1d1d !important;
+  color: white !important;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+
 
 .logo {
   margin-left: 50px;
