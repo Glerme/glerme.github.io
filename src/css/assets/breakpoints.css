@@ -1,4 +1,4 @@
-@media (min-width: 0px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .logo {
     margin-left: 20px;
     margin-right: 50px;
@@ -13,11 +13,11 @@
     padding: 20px;
   }
   .conteudo-nome h1 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-self: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 
     font-size: 35px;
     font-weight: 400;
@@ -159,62 +159,4 @@
 }
 
 @media (min-width: 990px) {
-  .logo {
-    margin-left: 50px;
-  }
-
-  .principal {
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
-  }
-
-  .bloco {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px auto;
-  }
-
-  .conteudo-nome {
-    margin-left: 100px;
-    padding: 10px;
-    max-width: 50vw;
-  }
-
-  .conteudo-nome h1 {
-    font-size: 70px;
-    font-weight: 400;
-    margin-bottom: 15px;
-  }
-
-  .conteudo-nome p {
-    font-size: 20px;
-    font-weight: 300;
-    max-width: 600px;
-  }
-
-  .conteudo-img {
-    padding: 10px;
-  }
-
-  .conteudo-img img {
-    width: 400px;
-    margin-right: 100px;
-    border-radius: 50%;
-    border: 3px white solid;
-  }
-
-  .concluidos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    margin: 0 auto;
-  }
-
-  .card {
-    max-width: 350px;
-    padding: 10px;
-    margin: 0;
-  }
 }

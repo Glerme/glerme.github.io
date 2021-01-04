@@ -1,7 +1,7 @@
-@import "./assets/breakpoints.css";
-@import "./assets/menu.css";
+/* @import "./assets/breakpoints.css"; */
+/* @import "./assets/menu.css"; */
 @import "./assets/menu-aside.css";
-@import "./assets/projetos.css";
+/* @import "./assets/projetos.css"; */
 @import "./assets/slide.css";
 @import "./assets/contato.css";
 @import "./assets/footer.css";
@@ -14,11 +14,56 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
   background-color: #1d1d1d;
   color: white;
+}
+
+nav div {
+  padding: 10px;
+}
+
+nav div a {
+  display: flex;
+  align-items: ri;
+}
+
+#sobre {
+  padding: 10px;
+}
+
+#projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: black;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+  background-color: #1d1d1d !important;
+  color: white !important;
 }
 
 li {
@@ -26,7 +71,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
@@ -96,3 +141,62 @@ h2 {
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+.logo {
+  margin-left: 50px;
+}
+
+.principal {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+.bloco {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.conteudo-nome {
+  margin-left: 100px;
+  padding: 10px;
+  max-width: 50vw;
+}
+
+.conteudo-nome h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.conteudo-nome p {
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 600px;
+}
+
+.conteudo-img {
+  padding: 10px;
+}
+
+.conteudo-img img {
+  width: 400px;
+  margin-right: 100px;
+  border-radius: 50%;
+  border: 3px white solid;
+}
+
+.concluidos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 350px;
+  padding: 10px;
+  margin: 0;
+} */
