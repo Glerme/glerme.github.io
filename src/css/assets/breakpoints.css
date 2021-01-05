@@ -1,0 +1,52 @@
+/* Breakpoints */
+@media (min-width: 0px) and (max-width: 575.98px) {
+  .linha {
+    display: none;
+  }
+
+  .dotted {
+    display: none;
+  }
+
+  .menu-aside {
+    position: fixed;
+    right: 20px;
+    top: 45%;
+    z-index: 1000;
+  }
+
+  .container-email {
+    margin: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+  .linha {
+    height: 110px;
+    position: fixed;
+    right: 38px;
+    top: 30%;
+    z-index: 1000;
+    border-left: 5px solid white;
+  }
+
+  .menu-aside {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    z-index: 1000;
+  }
+
+  .dotted {
+    height: 50px;
+    position: fixed;
+    right: 38px;
+    top: 20%;
+    z-index: 1000;
+    border-left: 5px dotted white;
+  }
+
+  .container-email {
+    margin-top: 60px;
+  }
+}

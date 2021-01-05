@@ -1,0 +1,30 @@
+/* Menu */
+nav div {
+  padding: 10px;
+}
+
+nav div a {
+  color: white;
+}
+
+nav div a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: darkgrey;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
