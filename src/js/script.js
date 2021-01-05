@@ -10,48 +10,40 @@ slide.addControl(".custom-controls");
 window.addEventListener("scroll", animarScroll);
 scrollSuave();
 
+const formulario = document.querySelector("#campo");
+
 $(document).ready(function () {
-  $("#enviar").click(function () {
-    //coletando dados
-    var nome = $("#nome").val();
-    var email = $("#email").val();
-    var telefone = $("#telefone").val();
-    var mensagem = $("#mensagem").val();
+  $(formulario).submit(function (e) {
+    e.preventDefault();
 
-    /* Validando */
-    if (nome.length <= 3) {
-      alert("Informe seu nome");
-      return false;
-    }
-    if (email.length <= 5) {
-      alert("Informe seu email");
-      return false;
-    }
-    if (mensagem.length <= 5) {
-      alert("Escreva uma mensagem");
-      return false;
-    }
+    var email = $('[name="email"]').val();
+    var nome = $('[name="nome"]').val();
+    var telefone = $("[name=telefone").val();
+    var mensagem = $('[name="mensagem"]').val();
 
-    // construir a url
-    var urlData = "&nome=" + nome + "&email=" + email + "&msg=" + mensagem;
+    var dados =
+      "&email=" +
+      email +
+      "&nome=" +
+      nome +
+      "&numero=" +
+      telefone +
+      "&mensagem=" +
+      mensagem;
 
-    // ajax
-    $.ajax({
-      type: "POST" /*tipo de post*/,
-      url: "sendmail.php" /*endereço do php*/,
-      async: true,
-      data: urlData /*informa a url*/,
-      sucess: function (data) {
-        /*sucesso*/
-        $("#retorno").html(data); //imprime no html
+    jQuery.ajax({
+      asyn: true,
+      type: "POST",
+      url: "/src/js/email/sendmail.php",
+      dataType: "html",
+      data: dados,
+      success: function (data) {
+        alert("Enviado ao servidor");
       },
-      beforeSend: function () {
-        //antes de enviar
-        $(".loading").fadeIn("fast"); //mostra loading
-      },
-      complete: function () {
-        $(".loading").fadeOut("fast"); //esconde loading
+      error: function () {
+        alert("Erro");
       },
     });
+    return false;
   });
 });

@@ -2,11 +2,12 @@ footer {
   width: 100%;
   background-color: #3a3a3a;
   margin-top: 20px;
+  z-index: 0;
 }
 
 footer div h4 {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   padding: 15px;
   margin-top: 5px;
   font-family: "Segoe UI", sans-serif;
