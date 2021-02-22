@@ -15,7 +15,7 @@
 }
 
 .email:hover{
-  color: #00D04C;
+  color: #240a33;
   transform: scale(1.1);
   transition: all 6ms;
 }
@@ -62,7 +62,7 @@
 }
 
 .redes .fa-instagram:hover {
-  color: #240a33;
+  color: #8134af;
   transition: 0.3s;
 }
 
