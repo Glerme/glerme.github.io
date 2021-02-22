@@ -15,7 +15,7 @@
 }
 
 .email:hover{
-  color: chartreuse;
+  color: #00D04C;
   transform: scale(1.1);
   transition: all 6ms;
 }
